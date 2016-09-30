@@ -7552,3 +7552,31 @@ jQuery(document).ready(function($){
 $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });
+
+
+/* Animation */
+
+var options = [
+  {
+    selector: '#about-animate', 
+    offset: 200, 
+    callback: function() {               // Callback needs to be a function.
+      $('#about-animate').addClass("shown animated fadeInUpBig");    // Reference `.wow` not `this`.
+    }
+  },
+  {
+    selector: '#how-work-animate', 
+    offset: 200, 
+    callback: function() {               // Callback needs to be a function.
+      $('#how-work-animated').addClass("shown animated fadeInUpBig");    // Reference `.wow` not `this`.
+    }
+  },    
+  {
+    selector: '#work-animate', 
+    offset: 200, 
+    callback: function() {               // Callback needs to be a function.
+      $('#work-animate').addClass("shown animated fadeInUpBig");    // Reference `.wow` not `this`.
+    }
+  }    
+];
+Materialize.scrollFire(options);
