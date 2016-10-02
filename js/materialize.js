@@ -7598,4 +7598,5 @@ var options = [
     }
   },
 ];
+
 Materialize.scrollFire(options);

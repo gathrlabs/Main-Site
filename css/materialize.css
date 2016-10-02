@@ -4285,7 +4285,7 @@ nav .input-field label.active {
 }
 
 .nav-up {
-    top: -56px;
+    top: -80px;
 }
 
 .navbar-fixed nav {
@@ -4302,6 +4302,40 @@ nav .input-field label.active {
   }
 }
 
+@font-face{ 
+	font-family: 'HK Grotesk Bold';
+	src: url('font/hkgrotesk-bold-web.eot');
+	src: url('font/hkgrotesk-bold-web.woff') format('woff'),
+	     url('font/hkgrotesk-bold-web.ttf') format('truetype'),
+	     url('font/hkgrotesk-bold-web.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'HK Grotesk Light';
+	src: url('font/hkgrotesk-light-web.eot');
+	src: url('font/hkgrotesk-light-web.woff') format('woff'),
+	     url('font/hkgrotesk-light-web.ttf') format('truetype'),
+	     url('font/hkgrotesk-light-web.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'HK Grotesk Medium';
+	src: url('font/hkgrotesk-medium-web.eot');
+	src: url('font/hkgrotesk-medium-web.woff') format('woff'),
+	     url('font/hkgrotesk-medium-web.ttf') format('truetype'),
+	     url('font/hkgrotesk-medium-web.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'HK Grotesk Regular';
+	src: url('font/hkgrotesk-regular-web.eot');
+	src: url('font/hkgrotesk-regular-web.woff') format('woff'),
+	     url('font/hkgrotesk-regular-web.ttf') format('truetype'),
+	     url('font/hkgrotesk-regular-web.svg#webfont') format('svg');
+}
+
+
+/*
 @font-face {
   font-family: 'Hind Guntur';
   font-weight: 300;
@@ -4326,6 +4360,7 @@ nav .input-field label.active {
   font-family: 'Hind Guntur', sans-serif;
   font-weight: 700;
 }
+*/
 
 a {
   text-decoration: none;
@@ -4333,7 +4368,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Hind Guntur", sans-serif;
+  font-family: "HK Grotesk Medium";
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4357,6 +4392,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "HK Grotesk Bold";
   font-weight: 400;
   line-height: 1.1;
 }
@@ -4414,11 +4450,11 @@ small {
 }
 
 .light, footer.page-footer .footer-copyright {
-  font-weight: 300;
+  font-family: 'HK Grotesk Light';
 }
 
 .thin {
-  font-weight: 200;
+  font-family: 'HK Grotesk Light';
 }
 
 .flow-text {
@@ -8531,6 +8567,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .body-text {
     font-weight: 300;
     font-size: 1.2rem;
+    font-family: 'HK Grotesk Light';
 }
 
 .headline {
@@ -8549,11 +8586,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 .overflow {
+    height: 100%;
+    min-height:100%;/*for mozilla*/
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    overflow-y:auto;
-    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .overflow {
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow-y: hidden;
+        display: block;
+    }
 }
 
 .handwriting {
@@ -8572,7 +8622,7 @@ header {
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  z-index: 10000;
+  z-index: 3000;
 }
 
 .underline {
@@ -8635,6 +8685,25 @@ header {
     }
 }
 
+.project-overlay {
+   position:fixed; 
+   top:0; 
+   left:0;
+}
+
+.side-line {
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -8642,6 +8711,7 @@ header {
 .shown {
     visibility: visible;
 }
+
 
 /* navigation Trigger */
 
