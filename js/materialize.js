@@ -7558,6 +7558,7 @@ $(document).ready(function(){
 
 $('#header').addClass('animated fadeInDown');
 $('#intro-text').addClass('animated fadeInLeft');
+$('#work-status').addClass('animated bounce');
 
 var options = [
   {
@@ -7599,3 +7600,4 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('select').material_select();
 });
+

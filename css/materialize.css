@@ -8737,6 +8737,15 @@ header {
     font-size: 0.6rem;
 }
 
+.back-button {
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+#work-status {
+    animation-duration: infinite;
+}
+
 /* navigation Trigger */
 
 .cd-primary-nav-trigger {
