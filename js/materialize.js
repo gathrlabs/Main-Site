@@ -7556,17 +7556,8 @@ $(document).ready(function(){
 
 /* Animation */
 
-//var options = [
-//  {
-//    selector: '#about-animate', 
-//    offset: 200, 
-//    callback: function() {               // Callback needs to be a function.
-//      $('#about-animate').addClass("shown animated fadeInUpBig");    // Reference `.wow` not `this`.
-//    }
-//  },   
-//];
-//Materialize.scrollFire(options);
-
+$('#header').addClass('animated fadeInDown');
+$('#intro-text').addClass('animated fadeInLeft');
 
 var options = [
   {
@@ -7600,3 +7591,11 @@ var options = [
 ];
 
 Materialize.scrollFire(options);
+
+$(document).ready(function() {
+  $('input#input_text, textarea#textarea1').characterCounter();
+});
+
+$(document).ready(function() {
+    $('select').material_select();
+});

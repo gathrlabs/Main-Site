@@ -2164,6 +2164,12 @@
         
 }
 
+.new-white {   
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+
 .new-grey {
   background-color: #EEF2F5 !important;       
 }
@@ -2738,6 +2744,12 @@ a {
 
 .divider {
   height: 5px;
+  overflow: hidden;
+  background-color: #1e3c72;
+}
+
+.divider-thin {
+  height: 2px;
   overflow: hidden;
   background-color: #1e3c72;
 }
@@ -6012,7 +6024,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #57AD68;
 }
 
 .input-field .prefix ~ input,
@@ -6575,6 +6587,7 @@ select {
   margin: 0 0 20px 0;
   padding: 0;
   display: block;
+  margin-top: 14.5px;
 }
 
 .select-wrapper span.caret {
@@ -8537,6 +8550,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   }
 }
 
+/* MY CUSTOMISED */
+
 /* Gathr Logo */
 
 .gathr-logo {
@@ -8557,6 +8572,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .big-text {
     font-weight: 500;
     color: white;
+    font-size: 2.2rem
 }
 
 .sub-text {
@@ -8612,7 +8628,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .body-emphasis {
     font-weight: 300px;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 header {
@@ -8675,7 +8691,7 @@ header {
 
 .project-content {
     width: 50%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 @media screen and (max-width: 700px) {
@@ -8712,6 +8728,14 @@ header {
     visibility: visible;
 }
 
+.social-buttons {
+    display: inline;
+    padding: 5%;
+}
+
+.small-text {
+    font-size: 0.6rem;
+}
 
 /* navigation Trigger */
 
