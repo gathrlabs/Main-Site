@@ -3469,13 +3469,13 @@ input[type=range] + .thumb {
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -4120,7 +4120,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: transparent;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4221,7 +4221,6 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav ul a {
@@ -4242,7 +4241,6 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav ul.left {
@@ -4406,7 +4404,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "HK Grotesk Bold";
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.8;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -8560,19 +8558,46 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     padding-top: 20px;
 }
 
+.gathr-icon {
+    height: 32px;
+}
+
+.earth {
+    height: 30px;
+    margin-left: 10px;
+}
+
 #logo-container {
     z-index: 1000;
 }
 
+#home-2 {
+  background: #7474BF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #7474BF , #348AC7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0 0;
+  width: 100vw;
+  height: 100vh;
+  transition: background 0.9s ease-in-out;
+}
+
 .header-text {
     padding-right: 20px;
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
 .big-text {
-    font-weight: 500;
     color: white;
-    font-size: 2.2rem
+    font-size: 3.5rem;
+    font-family: 'HK Grotesk Bold'; 
+}
+
+@media screen and (max-width: 700px) {
+    .big-text {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
 }
 
 .sub-text {
@@ -8618,7 +8643,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
         padding-top: 50px;
         padding-bottom: 50px;
         overflow-y: hidden;
-        display: block;
     }
 }
 
@@ -8632,7 +8656,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 header {
-  background: #f5b335;
+  background: transparent;
   height: 56px;
   position: fixed;
   top: 0;
@@ -8744,6 +8768,30 @@ header {
 
 #work-status {
     animation-duration: infinite;
+}
+
+.moving-gradient {
+    background: linear-gradient(234deg, #7474bf, #348ac7, #6ad291);
+    background-size: 2000% 2000%;
+    -webkit-animation: back-moving 40s ease infinite;
+    -moz-animation: back-moving 40s ease infinite;
+    animation: back-moving 40s ease infinite;
+}
+
+@-webkit-keyframes back-moving {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes back-moving {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes back-moving { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
 }
 
 /* navigation Trigger */

@@ -65,9 +65,11 @@
   white-space: nowrap;
   left: 0;
   top: 0;
+  color: black;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
+  color: white;
 }
 .no-js .cd-words-wrapper b {
   opacity: 0;
