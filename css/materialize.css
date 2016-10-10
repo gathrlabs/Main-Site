@@ -2130,6 +2130,9 @@
   background-color: #000000 !important;
 }
 
+.purp {
+    background-color: #7474BF !important;
+}
 
 .black-text {
   color: #000000 !important;
@@ -2172,6 +2175,16 @@
 
 .new-grey {
   background-color: #EEF2F5 !important;       
+}
+
+.new-orange {
+  background: #EC6F66; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6F66 , #F3A183); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6F66 , #F3A183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+
+.nave-text {
+    color: #6b7c93;
 }
 
 /* ==========================================================================
@@ -3463,19 +3476,18 @@ input[type=range] + .thumb {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
   width: 90%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width: 601px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (max-width: 993px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -8552,6 +8564,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /* Gathr Logo */
 
+#how-work-animate:before {
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+}
+
 .gathr-logo {
     width: 150px;
     fill: #FFF;
@@ -8562,6 +8581,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     height: 32px;
 }
 
+.overlap-image {
+    position: absolute;
+    z-index: -10;
+    top: 5%;
+    align-content: center;
+    right: -50px;
+}
+
+.waves {
+    height: 400px;
+    float: right;
+}
+
+@media screen and (max-width: 400px) {
+    .waves {
+      height: 200px;
+      float: right;
+    }
+}
+
+
 .earth {
     height: 30px;
     margin-left: 10px;
@@ -8571,14 +8611,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     z-index: 1000;
 }
 
+.skew {
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+}
+
+.anti-skew {
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+}
+
 #home-2 {
-  background: #7474BF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #7474BF , #348AC7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: 0 0;
   width: 100vw;
   height: 100vh;
-  transition: background 0.9s ease-in-out;
 }
 
 .header-text {
@@ -8587,16 +8637,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 .big-text {
-    color: white;
     font-size: 3.5rem;
     font-family: 'HK Grotesk Bold'; 
 }
 
+.big-nav {
+    font-size: 2.5rem;
+}
+
 @media screen and (max-width: 700px) {
     .big-text {
-      position: relative;
-      right: 0;
-      width: 100%;
+      font-size: 2.5rem;
+      font-family: 'HK Grotesk Bold'; 
     }
 }
 
@@ -8798,8 +8850,8 @@ header {
 
 .cd-primary-nav-trigger {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 30px;
+  top: 5px;
   height: 100%;
   width: 50px;
   background-color: transparent;
