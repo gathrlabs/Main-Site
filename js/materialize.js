@@ -7528,7 +7528,12 @@ jQuery(document).ready(function($){
 	});
 });
 
-
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+                       
+                       
 jQuery(document).ready(function($){
     //open/close primary navigation
 	$('.mobile-nav').on('click', function(){

@@ -2758,13 +2758,14 @@ a {
 .divider {
   height: 5px;
   overflow: hidden;
-  background-color: #1e3c72;
+  background-color: #6b7c93;
 }
 
 .divider-thin {
-  height: 2px;
+  height: 0.8px;
   overflow: hidden;
-  background-color: #1e3c72;
+  background-color: darkgrey;
+  width: 50%;
 }
 
 blockquote {
@@ -3015,9 +3016,12 @@ ul.staggered-list li {
 }
 
 footer.page-footer {
-  margin-top: -1px;
-  padding-top: 20px;
-  background-color: #ee6e73;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #f5f5f5;
+    height: 200px;
+    position: relative;
+    border-top: 1px solid #e1e1e1;
 }
 
 footer.page-footer .footer-copyright {
@@ -4991,7 +4995,7 @@ small {
   border-radius: 2px;
   display: inline-block;
   height: 36px;
-  line-height: 39px;
+  line-height: 33px;
   outline: 0;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -5462,7 +5466,7 @@ button.btn-floating {
   bottom: -100%;
   margin: 0;
   width: 100%;
-  max-height: 45%;
+  min-height: 100%;
   border-radius: 0;
   will-change: bottom, opacity;
 }
@@ -8714,7 +8718,7 @@ header {
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  z-index: 3000;
+  z-index: 999;
 }
 
 .underline {
@@ -8737,7 +8741,7 @@ header {
     right: 0;
     top: 100px;
     bottom: 100px;
-    width: 50%;
+    width: 40%;
 }
 
 .work-header {
@@ -8754,12 +8758,12 @@ header {
 }
 
 .bulwalwanga {
-    height: 130%;
+    height: 100%;
 }
 
 @media screen and (max-width: 700px) {
     .bulwalwanga {
-      width: 100%;
+      width: 90%;
       margin-left: 0%;
       margin-top: -25%;
     }
@@ -8822,29 +8826,19 @@ header {
     animation-duration: infinite;
 }
 
-.moving-gradient {
-    background: linear-gradient(234deg, #7474bf, #348ac7, #6ad291);
-    background-size: 2000% 2000%;
-    -webkit-animation: back-moving 40s ease infinite;
-    -moz-animation: back-moving 40s ease infinite;
-    animation: back-moving 40s ease infinite;
+.project-button {
+    margin-top: 5%;
 }
 
-@-webkit-keyframes back-moving {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+.foot {
+    margin-top: 2%;
 }
-@-moz-keyframes back-moving {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+
+.next-to {
+    margin-left: 1%;
+    margin-right: 1%;
 }
-@keyframes back-moving { 
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
-}
+
 
 /* navigation Trigger */
 
